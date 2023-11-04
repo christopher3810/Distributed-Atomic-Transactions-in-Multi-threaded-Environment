@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Configuration;
 
 @OpenAPIDefinition(
     info = @Info(
-        title = "사전 과제 API 명세서",
-        description = "결제, 취소, 트랜잭션 검색",
+        title = "분산 처리 환경 트랜 잭션 프로젝트 API",
+        description = "결제 요청",
         version = "v1"
     )
 )

@@ -1,13 +1,15 @@
 package com.atomic.demo.domain.payment.service;
 
-import com.atomic.demo.application.dto.payment.PaymentResponseDto;
+import com.atomic.demo.domain.payment.model.dto.PaymentRequestDto;
+import com.atomic.demo.domain.payment.model.dto.PaymentResponseDto;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
 @Service
 public class PaymentService {
 
-    public PaymentResponseDto savePaymentData(PaymentResponseDto responseDto){
-        return null;
+    public Mono<PaymentResponseDto> savePaymentData(PaymentRequestDto requestDto) {
+        return Mono.just(new PaymentResponseDto("",""));
     }
 
 }

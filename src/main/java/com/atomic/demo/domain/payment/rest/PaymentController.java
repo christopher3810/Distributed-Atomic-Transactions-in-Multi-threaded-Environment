@@ -1,7 +1,7 @@
-package com.atomic.demo.interfaces.rest;
+package com.atomic.demo.domain.payment.rest;
 
-import com.atomic.demo.application.dto.payment.PaymentRequestDto;
-import com.atomic.demo.application.dto.payment.PaymentResponseDto;
+import com.atomic.demo.domain.payment.model.dto.PaymentRequestDto;
+import com.atomic.demo.domain.payment.model.dto.PaymentResponseDto;
 import com.atomic.demo.domain.payment.service.PaymentService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -15,11 +15,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
-
-@Tag(name = "Payment API", description = "Payment services")
 @RestController
 @RequestMapping("/api/payment")
 @RequiredArgsConstructor
+@Tag(name = "Payment API", description = "Payment services")
 public class PaymentController {
 
     private final PaymentService paymentService;

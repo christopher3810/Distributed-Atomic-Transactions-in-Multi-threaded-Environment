@@ -1,4 +1,4 @@
-package com.atomic.demo.application.dto.payment;
+package com.atomic.demo.domain.payment.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

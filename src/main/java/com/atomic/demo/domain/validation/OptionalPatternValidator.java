@@ -1,7 +1,7 @@
-package com.atomic.demo.application.validation;
+package com.atomic.demo.domain.validation;
 
 
-import com.atomic.demo.application.validation.annotation.OptionalPattern;
+import com.atomic.demo.domain.validation.annotation.OptionalPattern;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import java.util.Optional;

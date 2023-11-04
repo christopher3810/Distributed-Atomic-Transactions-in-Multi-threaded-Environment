@@ -1,4 +1,4 @@
-package com.atomic.demo.infrastructure.config;
+package com.atomic.demo.domain.config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;

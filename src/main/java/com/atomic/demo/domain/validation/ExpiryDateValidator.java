@@ -1,6 +1,6 @@
-package com.atomic.demo.application.validation;
+package com.atomic.demo.domain.validation;
 
-import com.atomic.demo.application.validation.annotation.ValidExpiryDate;
+import com.atomic.demo.domain.validation.annotation.ValidExpiryDate;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import java.time.LocalDate;

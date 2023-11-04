@@ -1,4 +1,4 @@
-package com.atomic.demo.application.helper;
+package com.atomic.demo.domain.validation.helper;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;

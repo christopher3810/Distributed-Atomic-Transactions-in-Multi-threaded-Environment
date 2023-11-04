@@ -1,5 +1,8 @@
 package com.atomic.demo.application.dto.payment;
 
+import com.atomic.demo.application.helper.VatDeserializer;
+import com.atomic.demo.application.validation.annotation.OptionalPattern;
+import com.atomic.demo.application.validation.annotation.ValidExpiryDate;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;

@@ -1,4 +1,4 @@
-package com.atomic.demo.domain.lock.model;
+package com.atomic.demo.domain.redisLock.model;
 
 import java.time.Duration;
 

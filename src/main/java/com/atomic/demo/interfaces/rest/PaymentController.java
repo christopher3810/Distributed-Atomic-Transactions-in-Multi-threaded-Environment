@@ -34,7 +34,7 @@ public class PaymentController {
         )
         @Valid @RequestBody PaymentRequestDto paymentRequest) {
         return paymentService.savePaymentData(paymentRequest)
-            .map(paymentResponseDto -> ResponseEntity.ok(paymentResponseDto))
+            .map(ResponseEntity::ok)
             .defaultIfEmpty(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }
 

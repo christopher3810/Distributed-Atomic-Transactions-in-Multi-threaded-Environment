@@ -18,14 +18,14 @@ import reactor.core.publisher.Mono;
 
 @Tag(name = "Payment API", description = "Payment services")
 @RestController
-@RequestMapping("/api/payments")
+@RequestMapping("/api/payment")
 @RequiredArgsConstructor
 public class PaymentController {
 
     private final PaymentService paymentService;
 
     @Operation(summary = "결제 요청", description = "카드 정보로 결제를 요청 합니다.")
-    @PostMapping
+    @PostMapping("/pay")
     public Mono<ResponseEntity<PaymentResponseDto>> createPayment(
         @Parameter(
             name = "payment Request",
